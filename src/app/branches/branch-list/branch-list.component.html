@@ -1,22 +1,10 @@
-<div class="container-fluid">
-  <div class="row form-group">
-    <div class="col-md-12">
-      <button class="btn btn-success">Add Branch</button>
-    </div>
+<a class="list-group-item clearfix">
+  <div class="float-left">
+    <h4 class="list-group-item-heading">{{ branch.name }}</h4>
+    <p class="list-group-item-text">{{ branch.description }}</p>
   </div>
-  <hr>
-  <div class="row">
-    <div class="col-md-12 ">
-      <a class="list-group-item clearfix" *ngFor="let branch of branches">
-        <div class="float-left">
-          <h4 class="list-group-item-heading">{{ branch.name }}</h4>
-          <p class="list-group-item-text">{{ branch.description }}</p>
-        </div>
-        <div class="float-right">
-            <button class="btn btn-primary m-1">Edit</button>
-            <button class="btn btn-danger m-1">Delete</button>
-        </div>
-      </a>
-    </div>
+  <div class="float-right">
+      <button class="btn btn-primary m-1">Edit</button>
+      <button class="btn btn-danger m-1">Delete</button>
   </div>
-</div>
+</a>
